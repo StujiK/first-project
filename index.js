@@ -25,11 +25,11 @@ app.get('/', (req, res) => {
   
       html += "</table>\n</body>\n</html>";
       console.log(html);
+      res.send(html);
   } catch (err) {
     console.error(err);
   }
-
-  res.send(html)
+    
 })
 
 app.listen(port, () => {
